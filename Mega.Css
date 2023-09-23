@@ -1,0 +1,1237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    color: rgb(139, 138, 138);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+header {
+    width: 100%;
+}
+
+.Top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(177, 174, 174);
+}
+
+.orta1 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sag1,
+.sol1 {
+    width: 50%;
+}
+
+.sag1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sol1 {
+    display: flex;
+}
+
+.list1 {
+    width: 90%;
+}
+
+.list1 ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list1 li {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+
+.list2 {
+    width: 90%;
+}
+
+.mobile-hamburger {
+    display: none;
+}
+
+.list2 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list2 li {
+    padding: 0 10px;
+}
+
+.list2 li:not(li:last-child) {
+    border-right: 1px solid gainsboro;
+}
+
+.account-dropdown ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-dropdown li {
+    border-right: 0 !important;
+}
+
+.list2 li:nth-child(5) {
+    position: relative;
+}
+
+.list2 li:nth-child(5):hover .account-dropdown {
+    display: flex;
+}
+
+.account-dropdown {
+    position: absolute;
+    right: 0;
+    top: 37px;
+    width: 150px;
+    padding: 20px;
+    background-color: white;
+    display: none;
+    box-shadow: 1px 0px 4px 0px rgb(204, 204, 204);
+}
+
+.account-dropdown li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.orta2 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sol2 {
+    width: 50%;
+}
+
+.sag2 {
+    width: 50%;
+}
+
+.sag2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #333E48;
+}
+
+.Contact {
+    width: 178px;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid gainsboro;
+    padding-left: 25px;
+}
+
+.list3 {
+    width: 100%;
+}
+
+.nav-item {
+    border-right: 1px solid gainsboro;
+    padding: 0 10px;
+}
+
+.list3 ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.list3 li:nth-child(2):hover .shopdropdown {
+    display: flex;
+}
+
+.list3 li:nth-child(2) {
+    position: relative;
+}
+
+.shopdropdown ul {
+    flex-direction: column;
+}
+
+.shopdropdown {
+    position: absolute;
+    z-index: 2;
+    padding: 20px;
+    display: none;
+    width: 180px;
+    background-color: white;
+    box-shadow: 1px 0px 4px 0px rgb(204, 204, 204);
+}
+
+.shopdropdown li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    width: 100%;
+    height: 60px;
+    background-color: #F5D000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.axtar {
+    height: 40px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.axtar i {
+    position: absolute;
+    right: 20px;
+    color: gray;
+}
+
+.axtar input {
+    width: 100%;
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    padding: 20px;
+    outline: none;
+}
+
+
+.orta3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item {
+    background-color: #333E48;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 15px;
+    width: 12%;
+}
+
+.item i {
+    color: white;
+}
+
+.item a {
+    color: white;
+}
+
+.shop1 {
+    width: 17%;
+    display: flex;
+    position: relative;
+
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.shopdrobdown2 {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 38px;
+    border: 1px solid gold;
+    transition-duration: 0.5s;
+    height: 0;
+    overflow: hidden;
+}
+
+#check:checked~.shopdrobdown2 {
+    height: 27em;
+}
+
+.shopdrobdown2 ul {
+    padding: 10px;
+}
+
+.shopdrobdown2 ul li {
+    padding: 10px 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(212, 211, 211);
+    font-size: 15px;
+}
+
+.S1 {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.Samsung {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Samsung img {
+    width: 100%;
+}
+
+.S2 {
+    margin: 50px 0;
+    width: 100%;
+}
+
+.orta4 {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Van {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Van i {
+    font-size: 35px;
+    color: #838181;
+    margin-bottom: 25px;
+    transition-duration: 0.1s;
+}
+
+.Van:hover i {
+    transform: rotateY(180deg);
+
+}
+
+.van1 {
+    font-weight: 600;
+}
+
+.S3 {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.orta5 {
+    width: 88%;
+}
+
+.S3list {
+    width: 100%;
+    height: 300px;
+    border: 1px solid gainsboro;
+    display: flex;
+    padding: 15px;
+}
+
+.qulaqciq {
+    align-items: center;
+    width: 22%;
+    display: flex;
+
+
+}
+
+.qulaqciq1 {
+
+    width: 100%;
+}
+
+.qulaqciq1 img {
+    width: 100px;
+    transform: translate(60px, -20px);
+}
+
+.qulaqciq2 {
+    padding-top: 20px;
+    width: 45%;
+}
+
+.qulaqciq2 h1 a {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.qulaqciq2:hover p a {
+    color: #F5D000;
+}
+
+.qulaqciq2:hover span a {
+    color: #F5D000;
+}
+
+.qulaqciq2 p a {
+    line-height: 22px;
+}
+
+.qulaqciq2 span a {
+    line-height: 50px;
+    text-decoration: underline;
+}
+
+.qulaqciq:not(:last-child) {
+    border-right: 1px solid rgb(194, 193, 193);
+}
+
+.S4 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.trend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trend h1 {
+    margin: 20px 0;
+}
+
+.orta6 {
+    width: 90%;
+}
+
+.ListS4 {
+    border: 1px solid rgb(206, 205, 205);
+    width: 200px;
+    height: 290px;
+}
+
+.Mac1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Mac img {
+    width: 175px;
+    transform: translate(8px, 5px);
+}
+
+.Mac1 p {
+    text-align: center;
+}
+
+.Mac1 span {
+    line-height: 40px;
+}
+
+.ListS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ListS4 {
+    margin-right: 15px;
+}
+
+.stars {
+    margin: 10px 0;
+}
+
+.S5 {
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+}
+
+.orta7 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.sol7,
+.sag7 {
+    width: 50%;
+}
+
+.sol7-text {
+    transform: translate(30px, 150px);
+    width: 40%;
+}
+
+.sol7-text h1 {
+    font-size: 30px;
+    color: #333368;
+}
+
+.sol7-text p {
+    font-size: 20px;
+    line-height: 70px;
+}
+
+.sol7-1 a img {
+    width: 600px;
+}
+
+.sol7-1 a button {
+    width: 20%;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    transform: translate(30px, -60px);
+    border: 0;
+}
+
+.sag7-text {
+    transform: translate(30px, 150px);
+    width: 40%;
+}
+
+.sag7-text h1 {
+    font-size: 30px;
+    color: #333368;
+}
+
+.sag7-text p {
+    font-size: 20px;
+    line-height: 70px;
+}
+
+.sag7-1 a img {
+    width: 600px;
+}
+
+.sag7-1 a button {
+    width: 20%;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    transform: translate(30px, -60px);
+    border: 0;
+}
+
+.S6 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.orta8 {
+    width: 90%;
+}
+
+.S61 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: -20px 0;
+}
+
+.S61 h1 {
+    line-height: 100px;
+}
+
+
+.S7 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 70px auto;
+
+}
+
+.orta9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 200px;
+}
+
+.sol8 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.sol8-T {
+    width: 40%;
+    height: 281px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+}
+.sag-img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.sag-img img {
+    width: 100%;
+}
+
+.sol8 p {
+    align-items: center;
+    font-size: 20px;
+}
+
+.sol8 h1 {
+    font-size: 30px;
+}
+
+.screen img {
+    transform: translate(-175px, -38px);
+}
+
+.screen img {
+    width: 300px;
+}
+
+.yumuru {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+
+.yumuru p {
+
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.yumuru span {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.ust-ust {
+    width: 100%;
+}
+
+.sari {
+    background-color: #f5d000;
+    width: 110%;
+    height: 40px;
+    transform: translate(-150px, 55px);
+}
+
+.sari span {
+    padding: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.romb {
+    width: 50px;
+    height: 50px;
+    background-color: #F6F6F6;
+    position: absolute;
+    z-index: 1;
+    rotate: 45deg;
+    transform: translate(-87px, 158px);
+}
+
+.S8 {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.ortaS8 {
+
+    width: 90%;
+}
+
+.shekiller {
+    display: flex;
+}
+
+.Qutu1 {
+    margin-right: 10px;
+    width: 24%;
+    border: 1px solid rgb(206, 205, 205);
+}
+
+.Qutu1 img {
+    width: 290px;
+}
+
+.shekil1-text {
+    width: 100%;
+    padding: 7px;
+}
+
+.shekil1-text h1 {
+    font-size: 15px;
+    color: black;
+    line-height: 20px;
+}
+
+.shekil1-text {
+    line-height: 20px;
+}
+
+.S9 {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+
+}
+
+.brendler {
+    display: flex;
+    justify-content: center;
+
+}
+
+.OrtaS9 {
+    width: 88%;
+    height: 140px;
+    border: 1px solid rgb(206, 205, 205);
+}
+
+.brendler img {
+    margin: 20px;
+}
+
+.brend img {
+    filter: grayscale(100%);
+}
+
+.brend:hover img {
+    filter: grayscale(0%);
+}
+
+.S10 {
+    margin: 30px auto;
+    background-color: #F5D000;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.OrtaS10 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.sol10,
+.sag10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.letter {
+    margin-right: 10px;
+}
+
+.letter i {
+    font-size: 30px;
+}
+
+.update {
+    margin-right: 10px;
+}
+
+.update h1 {
+
+    font-size: 20px;
+}
+
+.lineS10 {
+    width: 2px;
+    height: 25px;
+    background-color: black;
+    margin-right: 10px;
+}
+
+.Email {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Email input {
+
+    width: 80%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.sub {
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: #333E48;
+    margin-left: 10px;
+}
+
+.sub h1 {
+    font-size: 15px;
+    color: white;
+    padding: 7px;
+}
+
+Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.OrtaF1 ul {
+    width: 15%;
+}
+
+.OrtaF1 {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.OrtaF1 li h1 {
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.OrtaF1 li {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+.OrtaF1 li:hover a {
+    color: #F5D000;
+}
+
+.ContactF1 {
+    position: relative;
+    width: 25%;
+    margin-top: 3px;
+}
+
+.ContactF1 img {
+    position: absolute;
+    z-index: -2;
+    top: 51px;
+    right: 90px;
+}
+
+.ContactF1 h1 {
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.ContactF1 span {
+    line-height: 25px;
+}
+
+.ContactF1 a {
+    line-height: 35px;
+}
+
+.FSon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.OrtaF2 {
+    width: 90%;
+}
+
+.SolList ul {
+    padding: 10px;
+    width: 80%;
+    display: flex;
+}
+
+.borderli {
+    border-right: 1px solid gainsboro;
+
+}
+
+.SolList a {
+    padding: 0 10px;
+
+}
+
+.borderli:hover a {
+    color: #F5D000;
+}
+
+.borderli:hover:last-child {
+    color: gold;
+}
+
+.SolList ul {
+    width: 100%;
+}
+
+.F2Son {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(177, 174, 174);
+    border-top: 1px solid rgb(177, 174, 174);
+    padding: 10px;
+
+}
+
+.OrtaF3 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.solF3,
+.sagF3 {
+    width: 50%;
+}
+
+.cardlar img {
+    border-right: 2px solid blue;
+    width: 40px;
+    height: 25px;
+}
+
+.sagF3 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.nav-menu {
+    display: none;
+}
+
+@media(min-width:300px) and (max-width:768px) {
+    .item {
+        display: none;
+    }
+
+    .mobile-hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+
+    .list2 {
+        display: none;
+    }
+
+    .list2 ul {
+        display: none;
+    }
+
+    .axtar {
+        display: none;
+    }
+
+    .list3 ul {
+        justify-content: flex-end;
+    }
+
+    .list3 .show {
+        margin-left: 15px;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    .mobile-show {
+        display: flex;
+        width: 10%;
+    }
+
+    .shop1 {
+        width: 95%;
+    }
+
+    .orta4 {
+        flex-direction: column;
+    }
+
+    .orta4 .Van {
+        margin-bottom: 20px;
+    }
+
+    .S3list {
+        flex-direction: column;
+        height: 700px;
+    }
+
+    .qulaqciq {
+        width: 100%;
+        border-right: 0px !important;
+        margin-bottom: 20px;
+    }
+
+    .qulaqciq1 {
+        width: 25%;
+
+    }
+
+    .Mac img {
+        width: 100%;
+        transform: translate(0, 0);
+    }
+
+    .none {
+        display: none !important;
+    }
+
+    .qulaqciq1 img {
+
+        width: 130px;
+        transform: translate(0px, 0px);
+    }
+
+    .qulaqciq2 {
+        width: 25%;
+        padding: 0 0 0 15px;
+    }
+
+    .orta7 {
+        flex-direction: column;
+    }
+
+    .sol7,
+    .sag7 {
+        width: 100%;
+    }
+
+    .sol7-text {
+        width: 30%;
+    }
+
+    .sol7-text p {
+        font-size: 20px;
+    }
+
+    .sol7-text h1 {
+        font-size: 20px;
+    }
+
+    .sag7-text {
+        width: 30%;
+    }
+
+    .sag7-text p {
+        font-size: 20px;
+    }
+
+    .sag7-text h1 {
+        font-size: 20px;
+    }
+
+    .sag7-1 a button {
+        width: 20%;
+    }
+
+    .sol7-1 {
+        margin-bottom: -9em;
+    }
+
+    .orta9 {
+        height: 130px;
+    }
+
+    .sol8-T {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sag-img {
+        height: 130px;
+    }
+
+    .sol8 p {
+        font-size: 11px;
+    }
+
+    .sol8 h1 {
+        font-size: 15px;
+    }
+
+    .Qutu1 {
+        margin-right: 10px;
+        width: 50%;
+        border: 1px solid rgb(206, 205, 205);
+    }
+
+    .brendler {
+        justify-content: space-around;
+    }
+
+    .S10 {
+        width: 95%;
+        height: 140px;
+        border-radius: 5px;
+    }
+
+    .sol10 {
+        width: 100%;
+        flex-direction: column;
+        line-height: 30px;
+    }
+
+    .sag10 {
+        width: 100%;
+    }
+
+    .OrtaS10 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lineS10 {
+        display: none;
+    }
+
+    .Email {
+        width: 60%;
+        justify-content: center;
+    }
+
+    .OrtaF1 {
+        flex-direction: column;
+    }
+
+    .OrtaF1 ul {
+        width: 100%;
+    }
+
+    .OrtaF1 .Lino {
+        display: none;
+    }
+
+    .ContactF1 {
+        display: none;
+    }
+
+    .SolList ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+    }
+
+    .SolList a {
+        padding: 0;
+    }
+
+    .borderli {
+        padding: 0 15px;
+    }
+
+    .Sol-ula ul li:last-child {
+        padding: 0 15px;
+    }
+    .solF3, .sagF3{
+        width: 40%;
+    }
+
+.OrtaF3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sagF3{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+    
+}
